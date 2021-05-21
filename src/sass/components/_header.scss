@@ -1,0 +1,199 @@
+.header {
+  position: relative;
+  margin-top: 7px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 27px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-icon,
+.logo-link {
+  display: block;
+  width: 96px;
+  height: 43px;
+  margin: 0 auto;
+  fill: #2e2520;
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 158px;
+    height: 71px;
+    margin-right: 38px;
+  }
+}
+
+.mobile-menu__icon {
+  width: 30px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.navigation__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    height: 22px;
+  }
+}
+.navigation___item {
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.navigation___link {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: #2e2520;
+}
+
+.hero__tittle {
+  margin: 0;
+  margin-top: 33px;
+
+  font-family: 'Caveat Brush', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+
+  color: #2e2520;
+  @media screen and (min-width: $tablet) {
+    margin-top: 10px;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
+    line-height: 1.02;
+    margin-top: 57px;
+  }
+}
+
+.hero__text {
+  margin: 0;
+  margin-top: 3px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-align: center;
+
+  color: #2e2520;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.21;
+    margin-top: 15px;
+  }
+}
+
+.btn-registration {
+  display: block;
+
+  border-style: none;
+  margin: 0 auto;
+  margin-top: 37px;
+
+  width: 145px;
+  height: 40px;
+  left: 88px;
+  top: 219px;
+
+  background: #ab816c;
+  border-radius: 25px;
+
+  font-family: 'Caveat Brush', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  color: $white-color;
+
+  text-align: center;
+  cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+    margin-top: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 30px;
+    width: 158px;
+    height: 45px;
+    font-size: 24px;
+  }
+}
+
+.social-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  @media screen and (min-width: $tablet) {
+    justify-content: start;
+    margin-top: 31px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 65px;
+  }
+}
+
+.social-links-list__item:not(:last-child) {
+  padding-right: 10px;
+
+  @media screen and (min-width: $desktop) {
+    padding-right: 12px;
+  }
+}
+.icon-twitter {
+  width: 19px;
+  height: 15px;
+  @media screen and (min-width: $desktop) {
+    width: 24px;
+    height: 19px;
+  }
+}
+
+.icon-instagram {
+  width: 15px;
+  height: 15px;
+  @media screen and (min-width: $desktop) {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.icon-facebook {
+  width: 9px;
+  height: 15px;
+  @media screen and (min-width: $desktop) {
+    width: 11px;
+    height: 19px;
+  }
+}
