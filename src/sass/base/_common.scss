@@ -4,10 +4,11 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: $text-color;
 
-  // Пример фона надо доделать для всех девайсов и ретины и разобраться с путями, у меня не вышло
+  // Пример фона надо доделать для всех девайсов и ретины и разобраться с путями,
+  // у меня не вышло
   @media screen and (min-width: $desktop) {
     background-image: url('../images/pic-donuts-desktop.png'), url('../images/spoon-desktop.png'),
       url('../images/bg-top-desktop.png');
