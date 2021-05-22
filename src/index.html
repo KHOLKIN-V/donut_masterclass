@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Donuts!</title>
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet">
@@ -14,23 +15,22 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="body__container">
-
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-  
-
-
+  <body class="body__container body__background">
     <include src="./partials/header.html"></include>
     <include src="./partials/menu.html"></include>
+
+<main>
     <include src="./partials/about_us.html"></include>
     <include src="./partials/program.html"></include>
     <include src="./partials/reviews.html"></include>
     <include src="./partials/registration.html"></include>
     <include src="./partials/contact.html"></include>
+</main>
     <include src="./partials/footer.html"></include>
-  </div>
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+
+
+    <!-- Скрипт идёт последним в размеке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,23 +1,69 @@
 <header class="header">
-       
+    <div>
+        
+    </div>
     <a href="#" class="logo-link">
     <svg class="logo-icon">
        <use href="./images/icon.svg#icon-logo"></use>
     </svg>
-</a>
-<svg class="mobile-menu__icon">
-    <use href="./images/icon.svg#icon-menu"></use>
-</svg>
+    </a>
 
-<nav class="navigation">
-    <ul class="navigation__list">
-        <li class="navigation___item"><a href="#" class="navigation___link">About us</a></li>
-        <li class="navigation___item"><a href="#" class="navigation___link">Program</a></li>
-        <li class="navigation___item"><a href="#" class="navigation___link">Reviews</a></li>
-        <li class="navigation___item"><a href="#" class="navigation___link">Contacts</a></li>
-    </ul>
-</nav>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation___item"><a href="#" class="navigation___link">About us</a></li>
+            <li class="navigation___item"><a href="#" class="navigation___link">Program</a></li>
+            <li class="navigation___item"><a href="#" class="navigation___link">Reviews</a></li>
+            <li class="navigation___item"><a href="#" class="navigation___link">Contacts</a></li>
+        </ul>
+
+        <button type="button" class="menu-button" data-menu-button>
+            <svg class="menu-button__icon">
+                <use href="./images/icon.svg#icon-close" width="18px" height="18px" class="menu-button__cross-icon">
+                </use>
+                <use href="./images/icon.svg#icon-menu" width="30px" height="16px" class="menu-button__menu-icon">
+                </use>
+            </svg>
+        </button>
+    </nav>
+
+    <picture class="donuts-bgi">
+        <source media="(max-width: 768.9px)"
+            srcset="./images/header/pic-donuts-mobile.webp 1x, ./images/header/pic-donuts-mobile@2x.webp 2x"
+            type="image/webp" sizes="35vw">
+        <source media="(max-width: 768.9px)"
+            srcset="./images/header/pic-donuts-mobile.png 1x, ./images/header/pic-donuts-mobile@2x.png 2x" type="image/png"
+            sizes="35vw">
+
+        <source media="(max-width: 1279.9px)"
+            srcset="./images/header/pic-donuts-tablet.webp 1x, ./images/header/pic-donuts-tablet@2x.webp 2x"
+            type="image/webp" sizes="35vw">
+        <source media="(max-width: 1279.9px)"
+            srcset="./images/header/pic-donuts-tablet.png 1x, ./images/header/pic-donuts-tablet@2x.png 2x" type="image/png"
+            sizes="35vw">
+
+        <source media="(min-width: 1280px)"
+            srcset="./images/header/pic-donuts-desktop.webp 1x, ./images/header/pic-donuts-desktop@2x.webp 2x"
+            type="image/webp" sizes="40vw">
+
+        <source media="(min-width: 1280px)"
+            srcset="./images/header/pic-donuts-desktop.png 1x, ./images/header/pic-donuts-desktop@2x.png 2x"
+            type="image/png" sizes="40vw">
+        <img src="./images/header/pic-donuts-mobile.png" alt="Много пончиков">
+    </picture>
+
+    <picture class="spoon-bgi">
+
+        <source media="(min-width: 1280px)"
+            srcset="./images/header/spoon-desktop.webp 1x, ./images/header/spoon-desktop@2x.webp 2x" type="image/webp"
+            sizes="15vw">
+
+        <source media="(min-width: 1280px)"
+            srcset="./images/header/spoon-desktop.png 1x, ./images/header/spoon-desktop@2x.png 2x" type="image/png"
+            sizes="15vw">
+        <img src="./images/header/spoon-desktop.png" alt="Ложка">
+    </picture>
 </header>
+
 
 <section class="hero">
     <h1 class="hero__tittle">Donut Masterclass <br> with the Donut King</h1>
@@ -47,4 +93,5 @@
         </a>
     </li>
 </ul>
+
 </section>

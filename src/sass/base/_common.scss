@@ -2,19 +2,11 @@ body {
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03;
   color: $text-color;
-
-  // Пример фона надо доделать для всех девайсов и ретины и разобраться с путями, у меня не вышло
-  @media screen and (min-width: $desktop) {
-    background-image: url('../images/pic-donuts-desktop.png'), url('../images/spoon-desktop.png'),
-      url('../images/bg-top-desktop.png');
-    background-size: 564px 100%, 124px 100%, 100% 1035px;
-    background-position: top right, 0 166px, center;
-    background-repeat: no-repeat;
-  }
+  background-color: $background-color;
 }
 
 .body__container {
@@ -25,6 +17,21 @@ body {
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
+  }
+
+  .body__background {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top, center bottom 216px;
+    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+
+    @media screen and (min-width: $tablet) {
+      background-position: center top, center bottom 63px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-position: center top, center bottom -101px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
