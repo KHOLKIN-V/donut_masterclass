@@ -1,0 +1,190 @@
+.registration__title {
+    @media screen and (max-width: $mobile-max) {
+      position: absolute;
+      z-index: 1;
+      width: calc(100% - 30px);
+      margin-bottom: 0;
+      top: 15px;
+    }
+  }
+  .registration {
+    position: relative;
+  
+    padding-bottom: 27px;
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 51px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 77px;
+    }
+  }
+  .registration__information {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      text-align: right;
+    }
+  }
+  .registration__price {
+    line-height: 1.22;
+    @extend .registration__information;
+    margin-bottom: 31px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      line-height: 1.09;
+    }
+  }
+  .registration__information--city {
+    margin-bottom: 25px;
+    line-height: 1.22;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 34px;
+    }
+    @media screen and (min-width: $desktop) {
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+  .registration__form {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+  }
+  .registration__form-text {
+    margin-bottom: 17px;
+  
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.25;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 13px;
+      max-width: 292px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+  .registration__field::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  
+    color: $placeholder-color;
+  }
+  .registration__field {
+    height: 22px;
+    padding: 2px;
+    border: 1px solid transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid $button-color;
+    background-color: $white-color;
+  }
+  .registration__field:not(:last-child) {
+    margin-bottom: 25px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .registration__button {
+    margin-bottom: 34px;
+    @media screen and (min-width: $tablet) {
+      margin-left: 25px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 38px;
+    }
+  }
+  .registration__container {
+    position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 91px;
+  
+    background: $white-color;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 54px;
+      padding-bottom: 53px;
+  
+      border-radius: 150px;
+    }
+  }
+  .container__registration--geometry {
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+      width: 179px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 234px;
+    }
+  }
+  .container__registration:last-child {
+    @media screen and (min-width: $tablet) {
+      margin-left: 30px;
+    }
+  }
+  .container__registration:last-child::before {
+    content: '';
+    display: block;
+    width: calc(100% - 30px);
+    height: 1px;
+    background-color: $placeholder-color;
+  
+    position: absolute;
+  
+    @media screen and (max-width: $mobile-max) {
+      top: 202px;
+    }
+    @media screen and (min-width: $tablet) {
+      left: 209px;
+      bottom: 35px;
+      width: 1px;
+      height: 190px;
+    }
+    @media screen and (min-width: $desktop) {
+      left: 264px;
+    }
+  }
+  .registration__form-container:first-child {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+  .registration__form-container:last-child {
+    display: flex;
+    justify-content: center;
+  
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+  .registration__container::before {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      content: '';
+      display: block;
+      height: 235px;
+      width: 255px;
+      position: absolute;
+      top: -51px;
+      left: -70px;
+      z-index: -1;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  }
