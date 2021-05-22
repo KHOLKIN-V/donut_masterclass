@@ -148,6 +148,12 @@
     color: $white-color;
     cursor: pointer;
 
+    transition: transform 250ms $cubic-bezier;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
     @media screen and (min-width: 1200px) {
       width: 158px;
       height: 45px;
