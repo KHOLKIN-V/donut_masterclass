@@ -36,23 +36,19 @@
   @media screen and (max-width: $mobile-max) {
     align-items: center;
   }
+
 }
-.mobile-menu__icon {
-  width: 30px;
-  height: 16px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
+
 
 .navigation__list {
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
     height: 22px;
+  }
+
+  @media screen and (max-width: $tablet-max) {
+      display: none;
   }
 }
 .navigation___item {
@@ -244,7 +240,6 @@
 .menu-button.is-open .menu-button__menu-icon {
   display: none;
 }
-
 
 .donuts-bgi {
   position: absolute;
