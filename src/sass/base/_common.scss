@@ -6,7 +6,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03;
   color: $text-color;
-  background-color: $background-color;
+  background-color: #fff;
+
+  @media screen and (min-width: $desktop) {
+    background-color: #fffff9;
+  }
 }
 
 .body__container {
@@ -19,21 +23,6 @@ body {
     width: $mobile;
   }
 
-  .body__background {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center top, center bottom 216px;
-    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
-
-    @media screen and (min-width: $tablet) {
-      background-position: center top, center bottom 63px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      background-position: center top, center bottom -101px;
-    }
-  }
-
   @media screen and (min-width: $tablet) {
     width: $tablet;
     padding-left: 67px;
@@ -43,6 +32,67 @@ body {
     width: $desktop;
     padding-left: 229px;
     padding-right: 229px;
+  }
+}
+
+.body__background {
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+    background-image: url('./../images/flour-mobile.png'), url('./../images/pic-mobile.png'),
+      url('./../images/header/pic-donuts-mobile.png'), url('./../images/bg-top-mobile.png'),
+      url('./../images/bg-bottom-mobile.png');
+    background-position: bottom right, top 309px center, top left, center top, center bottom 63px;
+    background-size: auto, auto, auto, contain, contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('./../images/flour-mobile@2x.png'), url('./../images/pic-mobile@2x.png'),
+        url('./../images/header/pic-donuts-mobile@2x.png'), url('./../images/bg-top-mobile.png'),
+        url('./../images/bg-bottom-mobile.png');
+      background-size: 87px 64px, 290px 310px, 120px 114px, contain, contain;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+    background-image: url('./../images/flour-tablet.png'), url('./../images/confetti-tablet.png'),
+      url('./../images/donut-registration-tablet.png'), url('./../images/pic-tablet.png'),
+      url('./../images/header/pic-donuts-tablet.png'), url('./../images/bg-top-tablet.png'),
+      url('./../images/bg-bottom-tablet.png');
+    background-position: bottom right, bottom 299px right 0px, bottom 491px left 0px,
+      top 377px left 11px, top 0px right 137px, center top, center bottom 63px;
+    background-size: auto, auto, auto, auto, auto, contain, contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('./../images/flour-tablet@2x.png'),
+        url('./../images/confetti-tablet@2x.png'),
+        url('./../images/donut-registration-tablet@2x.png'), url('./../images/pic-tablet@2x.png'),
+        url('./../images/header/pic-donuts-tablet@2x.png'), url('./../images/bg-top-tablet.png'),
+        url('./../images/bg-bottom-tablet.png');
+      background-size: 147px 144px, 280px 374px, 235px 255px, 330px 352px, 380px 361px, contain,
+        contain;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('./../images/flour-desktop.png'), url('./../images/confetti-desktop.png'),
+      url('./../images/donut-registration-desktop.png'), url('./../images/pic-desktop.png'),
+      url('./../images/header/pic-donuts-desktop.png'), url('./../images/header/spoon-desktop.png'),
+      url('./../images/bg-top-desktop.png'), url('./../images/bg-bottom-desktop.png');
+    background-position: bottom right, bottom 218px right 1px, bottom 557px left 63px,
+      top 548px left 71px, top right, top 166px left 0, center top, center bottom;
+    background-size: auto, auto, auto, auto, auto, auto, contain, contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('./../images/flour-desktop@2x.png'),
+        url('./../images/confetti-desktop@2x.png'),
+        url('./../images/donut-registration-desktop@2x.png'), url('./../images/pic-desktop@2x.png'),
+        url('./../images/header/pic-donuts-desktop@2x.png'),
+        url('./../images/header/spoon-desktop@2x.png'), url('./../images/bg-top-desktop.png'),
+        url('./../images/bg-bottom-desktop.png');
+      background-size: 319px 184px, 606px 589px, 257px 255px, 512px 547px, 719px 660px, 142px 450px,
+        contain, contain;
+    }
   }
 }
 
@@ -117,5 +167,3 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-

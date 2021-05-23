@@ -36,9 +36,7 @@
   @media screen and (max-width: $mobile-max) {
     align-items: center;
   }
-
 }
-
 
 .navigation__list {
   @media screen and (min-width: $desktop) {
@@ -48,7 +46,7 @@
   }
 
   @media screen and (max-width: $tablet-max) {
-      display: none;
+    display: none;
   }
 }
 .navigation___item {
@@ -67,6 +65,10 @@
   line-height: 1.22;
 
   color: #2e2520;
+}
+
+.hero {
+  padding-bottom: 118px;
 }
 
 .hero__tittle {
