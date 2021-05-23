@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donuts!</title>
     <link rel="icon" href="./images/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;500&display=swap"
-      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -19,15 +21,38 @@
     <include src="./partials/header.html"></include>
     <include src="./partials/mobile-menu.html"></include>
 
-<main>
-    <include src="./partials/about_us.html"></include>
-    <include src="./partials/program.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/registration.html"></include>
-    <include src="./partials/contact.html"></include>
-</main>
+    <main>
+      <include src="./partials/about_us.html"></include>
+      <include src="./partials/program.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <div class="bg-image">
+        <include src="./partials/registration.html"></include>
+        <include src="./partials/contact.html"></include>
+        <img
+          srcset="
+            ./images/donut-registration-tablet.png     1x,
+            ./images/donut-registration-tablet@2x.png  2x,
+            ./images/donut-registration-desktop.png    1x,
+            ./images/donut-registration-desktop@2x.png 2x
+          "
+          src="./images/donut-registration-tablet.png"
+          alt="#"
+          class="bg-donut"
+        />
+        <img
+          srcset="
+            ./images/confetti-tablet.png     1x,
+            ./images/confetti-tablet@2x.png  2x,
+            ./images/confetti-desktop.png    1x,
+            ./images/confetti-desktop@2x.png 2x
+          "
+          src="./images/confetti-tablet.png"
+          alt="#"
+          class="bg-confetti"
+        />
+      </div>
+    </main>
     <include src="./partials/footer.html"></include>
-
 
     <!-- Скрипт идёт последним в размеке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
